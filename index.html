@@ -41,27 +41,44 @@
   <header class="container md:mx-auto">
     <nav class="mt-10">
       <div class="navbar bg-prime-color flex rounded-full px-5">
-        <div class="navbar-start">
-          <div class="dropdown navbar-start">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
+
+        <div class="navbar-start flex-1">
+          <div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              <li><button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 ">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex items-center flex-1">
+          <div class="navbar-center flex items-center flex-1">
             <img src="./images/logo.png" alt="">
             <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
           </div>
         </div>
 
-        <div class="navbar-end  bg-white w-auto rounded-full px-5">
+        
+        <div class="navbar-end hidden lg:flex  bg-white w-auto rounded-full px-5">
           <input type="text" placeholder="Search here">
           <button class="btn btn-ghost btn-circle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -92,7 +109,7 @@
               <div class="hidden lg:flex p-8 gap-3 mx-56 bg-white relative  -bottom-64  rounded-xl">
                 <div class="flex flex-col items-center">
                   <img src="./images/fruit1.png" alt="">
-                  <p class="text-center">Strawberry</p>
+                  <p class="text-center">Grape</p>
                 </div>
                 <div class="flex flex-col">
                   <img src="./images/fruit2.png" alt="">
@@ -108,7 +125,7 @@
                 </div>
                 <div class="flex flex-col">
                   <img src="./images/fruit5.png" alt="">
-                  <p class="text-center">Mango</p>
+                  <p class="text-center">Pomegranate</p>
                 </div>
               </div>
             </div>
@@ -588,7 +605,7 @@
             </div>
           </div>
         </div>
-        <img src="./images/whychoose1.png" alt="" class="flex-1 p-10 h-auto  mx-auto">
+        <img src="./images/whychoose1.png" alt="" class="flex-1 p-10 h-auto">
         <div class="flex-1 pr-2 space-y-8 justify-end">
             <div class="flex items-center gap-3">
               <div class="text-right">
